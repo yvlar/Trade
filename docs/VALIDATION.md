@@ -53,6 +53,10 @@ les contrôles HTTP/navigateur ont donc été complétés dans la suite principa
 
 ## Portée
 
+Le premier passage CI Linux a détecté le parent absent du dossier temporaire
+pytest dans un clone vierge. La préparation crée maintenant explicitement data
+avant les tests ; aucun test ni contrôle n'a été désactivé.
+
 Ce rapport ne revendique ni performance de marché, ni validation d'un flux réel,
 ni certification de sécurité, ni précision d'exécution au carnet d'ordres.
 La publication ne déploie aucun serveur. La CI distante doit être vérifiée avant

@@ -186,6 +186,7 @@ local capable de forger HTTP peut toujours agir. Ne pas exposer ce serveur via p
 .\.venv\Scripts\python.exe -m ruff format --check swing tests
 .\.venv\Scripts\python.exe -m mypy swing
 node --check swing/static/app.js
+.\.venv\Scripts\python.exe -c "from pathlib import Path; Path('data').mkdir(exist_ok=True)"
 .\.venv\Scripts\python.exe -m pytest -q --basetemp=data\verification-tests
 ~~~
 
